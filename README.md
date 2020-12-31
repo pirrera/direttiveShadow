@@ -1,6 +1,7 @@
 # NativeScript-Vue Application
 
 Direttive Nativescript Vue con effetto shadow, swipe e touch
+Esempi di Alexander Ziskind 
 
 > A native application built with NativeScript-Vue
 
