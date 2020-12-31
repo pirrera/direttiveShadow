@@ -1,6 +1,6 @@
 # NativeScript-Vue Application
 
-Direttive Nativescript Vue con effetto shadow e swipe
+Direttive Nativescript Vue con effetto shadow e swipe e touch
 
 > A native application built with NativeScript-Vue
 
