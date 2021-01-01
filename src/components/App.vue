@@ -1,32 +1,33 @@
 <template>
   <Page>
-    <ActionBar title="Welcome to NativeScript-Vue!" />
-    <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false">
+    <ActionBar title="Direttive in NativeScript-Vue: ESEMPI" />
 
-      <StackLayout orientation="horizontal" class="content-wrapper" >
+        <ScrollView orientation="horizontal" scrollBarIndicatorVisible="false" v-swipe>
+          <StackLayout orientation="horizontal" class="content-wrapper" >
 
-        <ContentView class="card" v-swipe v-shadow>
-          <GridLayout rows="auto, auto" columns="auto">
-           <Label text="SWIPE" textWrap="true" row="0" col="0" backgroundColor="yellow" fontSize="70" />
-          <Image src="~/assets/images/a.png" stretch="aspectFit" height="500"  row="1" col="0" />
-          </GridLayout>
-        </ContentView>
+            <ContentView class="card"  v-shadow>
+              <GridLayout rows="auto, auto" columns="auto">
+              <Label text="SWIPE" textWrap="true" row="0" col="0" backgroundColor="yellow" fontSize="70" />
+              <Image src="~/assets/images/a.png" stretch="aspectFit" height="500"  row="1" col="0" />
+              </GridLayout>
+            </ContentView>
 
-        <ContentView class="card" v-touchScale v-shadow>
-          <GridLayout rows="auto,auto, auto" columns="auto">
-            <!-- Aggiunta di un bottone e di un  Label -->
-            <Label text="Touch" textWrap="true" row="0" col="0" backgroundColor="yellow" fontSize="70" />
-            <Button text="Button su Touch" tap="" row="1" col="0" height="50" />
-            <Image src="~/assets/images/b.png" stretch="aspectFit" height="500" row="2" col="0" />
-         </GridLayout>
-        </ContentView>
+            <ContentView class="card" v-doubleTap v-shadow>
+              <GridLayout rows="auto,auto, auto" columns="auto">
+                <!-- Aggiunta di un bottone e di un  Label -->
+                <Label text="Touch" textWrap="true" row="0" col="0" backgroundColor="yellow" fontSize="70" />
+                <Button text="Pagina2" tap="" row="1" col="0" height="50" />
+                <Image src="~/assets/images/b.png" stretch="aspectFit" height="500" row="2" col="0" />
+              </GridLayout>
+            </ContentView>
 
-        <ContentView class="card" v-touchScale v-shadow>
-          <Image src="~/assets/images/c.png" stretch="aspectFit" height="500" />
-        </ContentView>
-        
-      </StackLayout>
-    </ScrollView>
+            <ContentView ref="vado" class="card"  v-touchScale v-shadow>
+              <Image src="~/assets/images/c.png" stretch="aspectFit" height="500" />
+            </ContentView>
+            
+          </StackLayout>
+        </ScrollView>
+    
   </Page>
 </template>
 
@@ -38,7 +39,10 @@ export default {
     return {
       
     };
-  }
+  },
+  methods: {
+   
+  },
  
 };
 </script>
