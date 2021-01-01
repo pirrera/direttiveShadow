@@ -19,7 +19,7 @@ export default function touchScale(el) {
                 duration: 100
             });
 
-        } else if (touchGestureEventData.action === 'move') {
+        } /* else if (touchGestureEventData.action === 'move') {
             el.nativeView.animate({
                 scale: { x: 1, y: 1 },
                 opacity: 1,
@@ -35,6 +35,6 @@ export default function touchScale(el) {
                 duration: 100
             });
 
-        } 
+        }  */
     });
 }
