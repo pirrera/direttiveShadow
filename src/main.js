@@ -6,11 +6,12 @@ import VueDevtools from 'nativescript-vue-devtools'
 import shadow from './directives/shadow.js';
 import touchScale from './directives/touchScale.js';
 import swipe from './directives/swipe.js';
+import doubleTap from './directives/double.js';
 
 Vue.directive('touchScale', touchScale);  
 Vue.directive('shadow', shadow);  
 Vue.directive('swipe', swipe);  
-
+Vue.directive('doubleTap', doubleTap );  
 
 if(TNS_ENV !== 'production') {
   Vue.use(VueDevtools)
